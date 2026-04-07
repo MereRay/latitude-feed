@@ -1,6 +1,8 @@
-{
-  "Post ID": "some-unique-id",
-  "Caption": "...",
-  "Image": "...",
-  "Link": "..."
-}
+[
+  {
+    "caption": "Cora the Coral has officially begun...",
+    "image": "https://...",
+    "link": "https://www.instagram.com/p/XXXXXXXXXXX/",
+    "username": "latitudebuddies"
+  }
+]
