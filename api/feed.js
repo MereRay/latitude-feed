@@ -19,7 +19,7 @@ export default async function handler(req, res) {
 
   const url = `https://api.airtable.com/v0/${BASE_ID}/${encodeURIComponent(
     TABLE_NAME
-  )}?filterByFormula=${encodeURIComponent(`{Buddy}='${buddy}'`)}`;
+  )}?filterByFormula=${encodeURIComponent(`{Buddy}='${buddy}'`)}&sort[0][field]=Date&sort[0][direction]=desc`;
 
   try {
     const response = await fetch(url, {
@@ -34,6 +34,8 @@ export default async function handler(req, res) {
       caption: record.fields.Caption || "",
       image: record.fields.Image?.[0]?.url || "",
       link: record.fields["View on Instagram"] || "",
+      username: record.fields.Username || "latitudebuddies",
+      date: record.fields.Date || "",
     }));
 
     return res.status(200).json(posts);
