@@ -1,7 +1,6 @@
-[
-  {
-    "caption": "Cora soaking up the sunshine in Cancun 🌊",
-    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
-    "link": "https://instagram.com/"
-  }
-]
+{
+  "Post ID": "some-unique-id",
+  "Caption": "...",
+  "Image": "...",
+  "Link": "..."
+}
